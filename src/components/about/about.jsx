@@ -18,7 +18,8 @@ const About = () => {
         </div>
         <div className="a-right">
             <h1 className='a-title'>About Me</h1>
-            <p className='a-sub'>ersdfadafdfdvadfasdfadfasdfasdf</p>
+            <p className='a-sub'> amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut la</p>
             <p className="a-desc">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. 
