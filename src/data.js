@@ -1,0 +1,32 @@
+export const products=[
+    {
+        id:1,
+        img:"http://5b0988e595225.cdn.sohucs.com/images/20180821/e02ace395301433ebc1fe4c5a02efeaa.jpeg",
+        link:"https://www.google.com"
+    },
+    {
+        id:2,
+        img:"https://upload-bbs.miyoushe.com/upload/2021/08/10/137101761/c3fffdd4490ecbdfa8339545d2ef53cd_6204944127370118445.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png",
+        link:"https://www.google.com"
+    },
+    {
+        id:3,
+        img:"https://fs.img4399.com/news/2021/08/10/afa1bd26b2abc7c7868b8bedc2ec0b0e~s550",
+        link:"https://www.google.com"
+    },
+    {
+        id:4,
+        img:"https://upload-bbs.miyoushe.com/upload/2021/08/10/137101761/249b3078611b990011ae5c4ac8da37be_9204950827572509128.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png",
+        link:"https://www.google.com"
+    },
+    {
+        id:5,
+        img:"https://upload-bbs.miyoushe.com/upload/2021/08/10/137101761/f4b065bc3496f51513f266044c7acd32_7293626239148773054.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png",
+        link:"https://www.google.com"
+    },
+    {
+        id:6,
+        img:"https://pic1.zhimg.com/80/v2-0f5233f0267d09f64a1af6b515272004_1440w.webp",
+        link:"https://www.google.com"
+    },
+]
