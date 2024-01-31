@@ -6,7 +6,7 @@
 .c-bg{
     width: 20px;
     height: 100%;
-    background-color: #59b256;
+    background-color:#BE959F;
     position: absolute;
 }
 
@@ -61,6 +61,8 @@ input{
     margin: 10px 0px;
     font-size: 14px;
     padding-left: 10px;
+    background-color: #EAE5DF;
+    color: #BE959F;
 }
 
 textarea{
@@ -68,18 +70,28 @@ textarea{
     margin: 10px 0px;
     font-size: 14px;
     padding-left: 10px;
+    background-color: #EAE5DF;
+    color: #BE959F;
 }
+
+input:focus {
+    outline: none; 
+  }
+
+  textarea:focus{
+    outline: none;
+  }
 
 button{
     border: none;
     padding: 15px;
-    background-color: #59b256;
+    background-color: #BE959F;
     color: white;
     cursor: pointer;
     border-radius:20px;
 }
 span{
-    color: #59b256;
+    color: #BE959F;
     padding-left: 10px;
     font-size: 15px;
     display: flex;
@@ -87,6 +99,10 @@ span{
 
 }
 
+a{
+
+    color: inherit; /* 使用父元素的文本颜色 */
+}
 
 @media screen and (max-width: 480px) {
     .c-wrapper {

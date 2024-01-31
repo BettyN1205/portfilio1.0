@@ -1,22 +1,36 @@
-import React from 'react'
+import React from "react";
 import "./productList.css";
-import Product from "../product/product"
-import {products} from "../../data"
+import { products } from "../../data";
 
 const ProductList = () => {
   return (
-    <div className='pl'>
-        <div className="pl-texts">
-            <h1 className='pl-title'>Create & inspire</h1>
-            <p className='pl-desc'>
-                asdadlfasdfadfavdlijnlwaien'vpdknalwkdana/lsdkfja/ldkfjdlkf.
-            </p>
-        </div>
-        <div className="pl-list">
-           {products.map((item)=>(<Product key={item.id} img={item.img} link={item.link}/>))}   
-        </div>
-    </div>
-  )
-}
+    <div className="pl">
+      <div className="pl-texts">
+        <h1 className="pl-title">Projects</h1>
+      </div>
+      <div className="pl-lists">
+        {products.map((item) => (
 
-export default ProductList
+          <section key={item.id} className="card-container">
+            <div className="card">
+            <div className="p-browser">
+                 <div className="p-circle"></div>
+                  <div className="p-circle"></div>
+                  <div className="p-circle"></div>
+             </div>
+             <a href={item.link} target="_blank" rel="noreferrer">
+                  <img className="p-img" alt="" src={item.img}></img>
+             </a>
+            </div>
+            <div className="card-desc">
+              <p>{item.des}</p>
+              <span>TECH: {item.tech}</span>
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ProductList;

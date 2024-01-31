@@ -15,6 +15,7 @@
 
 .a-right{
     flex: 1;
+    padding-right: 40px;
 }
 
 .a-card.bg{
@@ -41,6 +42,8 @@
 }
 .a-sub{
     margin: 20px 0px;
+    display: flex;
+    align-items: center;
 }
 .a-desc{
     font-weight: 300;

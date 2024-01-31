@@ -1,6 +1,6 @@
 import React from 'react'
 import "./contact.css"
-import { FaMapMarkerAlt,FaLinkedin,FaMailBulk,FaSmileWink } from 'react-icons/fa';
+import { FaMapMarkerAlt,FaLinkedin,FaMailBulk,FaSmileWink,FaGithub } from 'react-icons/fa';
 import {useRef} from "react";
 import {useState} from "react";
 import emailjs from 'emailjs-com';
@@ -31,7 +31,7 @@ const Contact = () => {
         </div>
         <div className="c-wrapper">
                 <div className="c-left">
-                    <h1 c-title>Let's discuss your project</h1>
+                    <h1 c-title>Get in touch with me!</h1>
                     <div className="c-info">
                         <div className="c-info-item">
                         <FaMailBulk size={25}/><p className='ct'> bettychaoranniu@gmail.com</p>
@@ -40,13 +40,19 @@ const Contact = () => {
                        <FaMapMarkerAlt size={25}/><p className='ct'> Richmond, BC, Canada</p>
                        </div>
                        <div className="c-info-item">
-                       <FaLinkedin size={25}/><p className='ct'>linkin</p>
+                       <FaLinkedin size={25}/><p className='ct'> <a target="_blank" href='http://www.linkedin.com/in/bettychaoranniu'>linkedin.com/in/bettychaoranniu</a> </p>
                        </div>
+
+                       <div className="c-info-item">
+                       <FaGithub size={25}/><p className='ct'> <a target="_blank" href='https://github.com/BettyN1205'> github.com/BettyN1205</a> </p>
+                       </div>
+
+                      
                     </div>
                 </div>
                 <div className="c-right">
                     <p className="c-desc">
-                        <b>What's your story?</b>Get in touch. Always freelancing if the right project comes along.
+                        <b>send your message directly </b>Fill out the form and click 'submit' to send.
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit}>
                         <input style={{backgroundColor: darkMode && "#333"}} type='text' placeholder='Name' name="user_name"></input>
@@ -57,7 +63,7 @@ const Contact = () => {
                         <span>
                         {done && (
         <>
-          <FaSmileWink size={20}/> Message submitted. Thank you!
+          <FaSmileWink style={{fontSize: '25px', marginRight:'10px'}}/>Got your message! I'll get back to you in a jiffy. 🚀
         </>
       )}
                         </span>
